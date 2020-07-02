@@ -1,0 +1,21 @@
+#include<bits/stdc++.h>
+using namespace std;
+ 
+ 
+ 
+int main()
+{
+    int n;
+    cin>>n;
+    double r;
+    for(int i=1;i<=n;i++)
+    {
+        cin>>r;
+        cout<<fixed;
+ 
+ 
+        cout<<"Case "<<i<<": "<<setprecision(2)<<((4*r*r)-(r*r*2*acos(0.0)))<<endl;
+ 
+ 
+    }
+}
