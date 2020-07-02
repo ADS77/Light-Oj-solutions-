@@ -1,0 +1,18 @@
+#include<bits/stdc++.h>
+using namespace std;
+#define pi acos(-1);
+int main()
+{
+    int t;
+    cin>>t;
+    double R,r,H,h,x;
+    for(int i=1;i<=t;i++)
+    {
+        cin>>R>>r>>H>>h;
+        double x=(H*r)/(R-r);
+        double rr=((h+x)*R)/(H+x);
+        double v1=(rr*rr)*(x+h)*pi;
+        double v2=(r*r*x)*pi;
+        cout<<"Case "<<i<<": "<<setprecision(15)<<fixed<<(v1-v2)/3.0<<endl;
+    }
+}
