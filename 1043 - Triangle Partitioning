@@ -1,0 +1,22 @@
+#include<bits/stdc++.h>
+using namespace std;
+ 
+ 
+ 
+int main()
+{
+    int n;
+    cin>>n;
+    double a,b,c,m;
+    for(int i=1;i<=n;i++)
+    {
+        cin>>a>>b>>c>>m;
+        cout<<fixed;
+ 
+ 
+        cout<<"Case "<<i<<": "<<setprecision(9)<<sqrt((m*a*a)/(m+1))<<endl;
+ 
+ 
+    }
+}
+ 
