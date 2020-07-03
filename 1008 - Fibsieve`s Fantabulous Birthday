@@ -1,0 +1,51 @@
+#include<bits/stdc++.h>
+using namespace std;
+#define ll long long
+int main()
+{
+    ll n,t,tmp,cnt = 1,x,y;
+    cin>>t;
+    while( t-- )
+    {
+        cin>>n;
+        ll root  = ceil(sqrt(n));
+        tmp = root*root - root +1 ; // eqn of diagonal
+        if(n==tmp)
+        {
+           x=y=root ;
+        }
+        else if(root%2==0)
+        {
+            if (n>tmp)
+            {
+                x=root ;
+                y=root-(n-tmp);
+            }
+            else if(n<tmp)
+            {
+                y=root;
+                x=root - (tmp-n);
+            }
+        }
+        else if(root%2)
+        {
+           if (n>tmp)
+            {
+                y=root;
+                x=root - (n-tmp);
+            }
+            else if(n<tmp)
+            {
+ 
+                x=root ;
+                y=root - (tmp-n);
+            }
+        }
+ 
+ 
+        cout<<"Case "<<cnt++<<": "<<x<<" "<<y<<endl;
+ 
+    }
+    return 0;
+}
+ 
