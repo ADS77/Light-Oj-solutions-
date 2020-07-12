@@ -1,5 +1,5 @@
 /*
-Idea about this problem is to convert the given number into binary in reverse order i.e (8 -> 001). Then append a 0 into it (00010) .
+Idea behind this problem is to convert the given number into binary in reverse order i.e (8 -> 001). Then append a 0 into it (00010) .
 
 Then reverse the order ( (01000)=8, that makes no harm the input value ).
 
